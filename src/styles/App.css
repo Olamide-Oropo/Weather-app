@@ -1,0 +1,297 @@
+:root{
+    --main-bg: rgba(23, 23, 23, 0.604);
+    --main-color: white;
+    --faded-color: rgba(110, 110, 110, 0.27);
+    --faded-white: rgb(179, 179, 179,.65);
+    --border-rd-lg:15px;
+    --border-rd-sm:5px;
+    --heading-font:40px;
+    --title-font: 17px;
+    --subheading-font:20px;
+    --text-font:15px;
+}
+*{
+    cursor: default;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+html{
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: var(--main-bg);
+    color:white
+}
+main{
+    position:relative
+}
+.fullsrcn{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    min-height:100vh;
+    height:100%;
+    background-color: var(--main-bg);
+    display: grid;
+    place-items: center;
+    z-index:999;
+}
+.alert{
+    background-color: var(--main-color);
+    color:black;
+    border-radius: var(--border-rd-sm);
+    padding: 3px 1rem;
+    font-size: var(--text-font);
+    text-align: center;
+    margin: 0 .5rem
+}
+.alert p{
+    width: fit-content;
+}
+.blur-bg,.main-bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+.blur-bg > img,.main-bg >img{
+    position: absolute;
+    top:0;
+    left:0;
+    filter: blur(1.2px);
+    -webkit-filter: blur(1.2px);
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    opacity:.8;
+}
+.main-bg{
+    width: 92%;
+    height: 94%;
+    border: 3px solid rgb(44, 44, 44);
+    /* border-radius: var(--border-rd-lg); */
+    display: grid;
+    justify-items: center;
+}
+.main-bg > img{
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    opacity:.5;
+    /* border-radius: var(--border-rd-lg); */
+    z-index: 1;
+}
+.Main-content{
+    z-index: 100;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+aside{
+    display: grid;
+    justify-items: center;
+    background-color: var(--main-bg);
+    height: 95%;
+    border-radius: var(--border-rd-lg);
+    width:300px;
+    border: 1.5px solid var(--faded-white);
+    max-height: 750px !important;
+}
+aside > *{
+    margin-bottom: 1.2rem !important;
+}
+aside h2{
+    font-size: var(--heading-font);
+    margin:0;
+    margin:.3rem 0 !important;
+    font-weight: 600;
+    height: fit-content;
+}
+aside p{
+    margin: 1.5px;
+    font-size: var(--text-font);
+}
+.tab{
+    background-color: var(--faded-color);
+    border-radius: var(--border-rd-sm);
+    padding: 2.5px 7px;
+    width: fit-content;
+    transition:.4s linear;
+    cursor: pointer;
+}
+.tab:hover{
+    background-color: var(--faded-white);
+}
+.date{
+    display:flex;
+    gap:1rem;
+    width: max-content;
+    margin:0;
+    align-items: center;
+}
+.vr{
+    color: rgb(155, 155, 155)
+}
+.info-content{
+    width:240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-content article{
+    display: flex;
+    gap:2.5px
+}
+.info-content article p,.activity-row p{
+    font-weight: 500;
+}
+.activities{
+    margin: 0;
+    display: grid;
+    justify-items: center;
+}
+.activities h3,.forecast h3{
+    font-size: var(--title-font);
+    font-size: 600;
+    text-align: center;
+    margin:.7rem 0;
+    margin-top:0;
+}
+.activity-row{
+    display:flex;
+    width: 220px;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.activity-row article p{
+    font-size: 16.5px;
+    text-transform: capitalize;
+}
+.forecast>section{
+    display: grid;
+    gap:10px;
+}
+.forecast-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:230px;
+    background-color: var(--faded-color);
+    border-radius: var(--border-rd-sm);
+    padding:2px 5px;
+}
+.weather-main{
+    display: grid;
+    justify-items: center;
+    width: calc(100% - 300px);
+    max-height: 850px !important;
+    height: 100%;
+}
+.weather-main h4{
+    font-size: var(--subheading-font);
+    font-weight:500;
+}
+.tab-hr{
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    border-radius: var(--border-rd-sm);
+    padding: .5em;
+    justify-content: center;
+    border: 1.5px solid var(--faded-white);
+    transition: .5s linear;
+    cursor: pointer;
+    max-height: 165px;
+}
+.loc-lg{
+    max-height: 50px;
+}
+.tab-hr:hover{
+    background-color: var(--faded-white);
+}
+.main-info{
+    display:flex;
+    width:80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:1rem 0;
+    gap:15px;
+}
+.main-info > article{
+    min-width: 140px;
+}
+.main-info > article p:first-child{
+    font-size: calc(var(--heading-font) - 9px);
+    text-align: center;
+    margin: 1rem 0
+}
+.main-info>article p:last-child{
+    text-align: center;
+    font-size: var(--title-font);
+    font-weight: 500;
+}
+.weather-main h5{
+    font-size: var(--subheading-font);
+    text-align: center;
+    margin:.8rem 0;
+    font-weight: 500;
+}
+.hourly-forecast{
+    display: flex;
+    justify-content: space-evenly;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+.hourly-forecast > article{
+    max-height: 100px;
+    border: none !important;
+}
+.hourly-forecast>article>img{
+    height: 24px;
+    width: 24px;
+}
+.hourly-forecast>article>p{
+    margin:.3rem;
+    text-align: center;
+}
+@media screen and (max-width:1000px) {
+    .main-bg {
+            width: 94%;
+            height: 96%;
+    }
+    .main-info{
+        width:95%;
+    }
+    .main-info > article{
+        padding:0 !important
+    }
+    .main-info>article p:first-child {
+        font-size: calc(var(--heading-font) - 15px);
+        margin: .5rem 0
+    }
+}
+@media screen and (max-width:700px) {
+    .loc{
+        font-size: var(--subheading-font);
+        text-align: center;
+        margin-bottom:.5rem !important;
+        margin-top: 0 !important;
+    }
+    .Main-content{
+        justify-content: center;
+    }
+    .main-bg{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}

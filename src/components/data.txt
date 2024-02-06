@@ -1,0 +1,208 @@
+{
+    "latitude": 6.5,
+    "longitude": 3.375,
+    "generationtime_ms": 0.0699758529663086,
+    "utc_offset_seconds": 0,
+    "timezone": "GMT",
+    "timezone_abbreviation": "GMT",
+    "elevation": 5,
+    "current_units": {
+        "time": "iso8601",
+        "interval": "seconds",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "is_day": "",
+        "precipitation": "mm",
+        "weather_code": "wmo code"
+    },
+    "current": {
+        "time": "2024-01-04T15:30",
+        "interval": 900,
+        "temperature_2m": 31.1,
+        "relative_humidity_2m": 67,
+        "is_day": 1,
+        "precipitation": 0,
+        "weather_code": 1
+    },
+    "hourly_units": {
+        "time": "iso8601",
+        "temperature_2m": "°C",
+        "weather_code": "wmo code",
+        "is_day": ""
+    },
+    "hourly": {
+        "time": [
+            "2024-01-04T09:00",
+            "2024-01-04T10:00",
+            "2024-01-04T11:00",
+            "2024-01-04T12:00",
+            "2024-01-04T13:00",
+            "2024-01-04T14:00",
+            "2024-01-04T15:00",
+            "2024-01-04T16:00",
+            "2024-01-04T17:00",
+            "2024-01-04T18:00",
+            "2024-01-04T19:00",
+            "2024-01-04T20:00"
+        ],
+        "temperature_2m": [
+            30.2,
+            30.8,
+            31.5,
+            32,
+            31.8,
+            31.6,
+            31.4,
+            30.8,
+            29.8,
+            28.9,
+            28.6,
+            28.6
+        ],
+        "weather_code": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+        ],
+        "is_day": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+        ]
+    },
+    "daily_units": {
+        "time": "iso8601",
+        "weather_code": "wmo code",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C"
+    },
+    "daily": {
+        "time": [
+            "2024-01-02",
+            "2024-01-03",
+            "2024-01-04",
+            "2024-01-05",
+            "2024-01-06"
+        ],
+        "weather_code": [
+            80,
+            80,
+            80,
+            80,
+            80
+        ],
+        "temperature_2m_max": [
+            33.3,
+            31.9,
+            32,
+            32,
+            32.2
+        ],
+        "temperature_2m_min": [
+            27.6,
+            27.6,
+            28,
+            27.3,
+            27.7
+        ]
+    }
+}
+0	Clear sky
+1, 2, 3	Mainly clear, partly cloudy, and overcast
+45, 48	Fog and depositing rime fog
+51, 53, 55	Drizzle: Light, moderate, and dense intensity
+56, 57	Freezing Drizzle: Light and dense intensity
+61, 63, 65	Rain: Slight, moderate and heavy intensity
+66, 67	Freezing Rain: Light and heavy intensity
+71, 73, 75	Snow fall: Slight, moderate, and heavy intensity
+77	Snow grains
+80, 81, 82	Rain showers: Slight, moderate, and violent
+85, 86	Snow showers slight and heavy
+95 *	Thunderstorm: Slight or moderate
+96, 99 *	Thunderstorm with slight and heavy hail
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright"
+                },
+                "name": "Colonel Adekunle Fayuji Court",
+                "country": "Nigeria",
+                "country_code": "ng",
+                "state": "Lagos State",
+                "county": "Eti Osa",
+                "city": "Lagos",
+                "suburb": "Ikoyi",
+                "lon": 3.432970937632291,
+                "lat": 6.4556828,
+                "housenumber": "22B",
+                "street": "Lugard Avenue",
+                "state_code": "LA",
+                "distance": 130.5366846675711,
+                "result_type": "building",
+                "postcode": "101222",
+                "formatted": "Colonel Adekunle Fayuji Court, 22B Lugard Avenue, Lagos 101222, LA, Nigeria",
+                "address_line1": "Colonel Adekunle Fayuji Court",
+                "address_line2": "22B Lugard Avenue, Lagos 101222, LA, Nigeria",
+                "timezone": {
+                    "name": "Africa/Lagos",
+                    "offset_STD": "+01:00",
+                    "offset_STD_seconds": 3600,
+                    "offset_DST": "+01:00",
+                    "offset_DST_seconds": 3600,
+                    "abbreviation_STD": "WAT",
+                    "abbreviation_DST": "WAT"
+                },
+                "plus_code": "6FR5FC4M+75",
+                "plus_code_short": "FC4M+75 Lagos, Eti Osa, Nigeria",
+                "rank": {
+                    "importance": 0.2000099999999999,
+                    "popularity": 2.149002730810812
+                },
+                "place_id": "5140fe8977b9760b40591a660d839ed21940f00102f901ab8de02100000000c0020392031d436f6c6f6e656c204164656b756e6c6520466179756a6920436f757274e203236f70656e7374726565746d61703a616464726573733a7761792f353638333634343539"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.432970937632291,
+                    6.4556828
+                ]
+            },
+            "bbox": [
+                3.4326901,
+                6.4554118,
+                3.4333539,
+                6.456057
+            ]
+        }
+    ],
+    "query": {
+        "lat": 6.455296,
+        "lon": 3.4340864,
+        "plus_code": "6FR5FC4M+4J"
+    }
+}
